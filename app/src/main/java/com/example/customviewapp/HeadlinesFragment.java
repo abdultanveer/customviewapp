@@ -42,7 +42,7 @@ public class HeadlinesFragment extends Fragment implements AdapterView.OnItemCli
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
         String itemClicked = adapterView.getItemAtPosition(position).toString();
-        //Toast.makeText(getActivity(), itemClicked, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), itemClicked, Toast.LENGTH_SHORT).show();
         callback.onArticleSelected(itemClicked); //switching on---4
 
     }

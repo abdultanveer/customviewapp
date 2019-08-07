@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/news_container"
     tools:context=".NewsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+    step B
+-->
+    <fragment
+        android:id="@+id/headlinesfrag"
+        android:name="com.example.customviewapp.HeadlinesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
+
+    <!--framelayout shows only one child at a time
+    if we add a new child the previous one will be
+    hidden-->
